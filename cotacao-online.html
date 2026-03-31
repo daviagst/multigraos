@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <title>Multigrãos - Logística e Transportes</title>
+</head>
+<body class="cotacao-page">
+    <a href="index.html" class="cotacao-logo-link" aria-label="Voltar à página inicial">
+        <img src="assets/log-multigraos.png" alt="Logo Multigrãos">
+    </a>
+    <main class="cotacao-container">
+        <section class="cotacao-header">
+            <h1><span>Cotação</span> Online</h1>
+        </section>
+
+        <form id="cotacao-form" class="cotacao-form" action="#" method="POST" novalidate>
+            <div class="form-row three-cols">
+                <div class="form-field">
+                    <label for="empresa">Nome da Empresa:</label>
+                    <input type="text" id="empresa" name="empresa" placeholder="Nome da Empresa">
+                </div>
+
+                <div class="form-field">
+                    <label for="veiculo">Tipo de Veículo:</label>
+                    <select id="veiculo" name="veiculo" required>
+                        <option value="">Selecione</option>
+                        <option value="graneleiro">Graneleiro</option>
+                        <option value="cacamba">Caçamba</option>
+                        <option value="tanque-carbono">Tanque Carbono</option>
+                        <option value="tanque-inox">Tanque Inox</option>
+                        <option value="prancha">Prancha</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="produto">Produto:</label>
+                    <select id="produto" name="produto" required>
+                        <option value="">Selecione</option>
+                        <option value="soja">Soja</option>
+                        <option value="farelo-de-soja">Farelo de Soja</option>
+                        <option value="sorgo">Sorgo</option>
+                        <option value="soja-desativada">Soja Desativada</option>
+                        <option value="oleo-demogado">Óleo Demogado</option>
+                        <option value="milho">Milho</option>
+                        <option value="calcario">Cálcario</option>
+                        <option value="ferlizantes">Ferlizantes</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row two-cols">
+                <div class="form-field">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com">
+                </div>
+
+                <div class="form-field">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999">
+                </div>
+            </div>
+
+            <div class="form-row three-cols">
+                <div class="form-field">
+                    <label for="quantidade">Quantidade em Toneladas</label>
+                    <input type="text" id="quantidade" name="quantidade" placeholder="Quantidade em Toneladas">
+                </div>
+
+                <div class="form-field">
+                    <label for="origem">Cidade/Local de Origem</label>
+                    <input type="text" id="origem" name="origem" placeholder="Ex: Gurupi-TO/Fazenda Ouro Verde">
+                </div>
+
+                <div class="form-field">
+                    <label for="destino">Cidade/Local de Destino</label>
+                    <input type="text" id="destino" name="destino" placeholder="Ex: Brasília-DF/Seara Alimentos">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-field full-width">
+                    <label for="roteiro">Roteiro de Descargas</label>
+                    <textarea id="roteiro" name="roteiro" placeholder="Roteiro de Descargas"></textarea>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-field full-width">
+                    <label for="observacoes">Observações</label>
+                    <textarea id="observacoes" name="observacoes" placeholder="Observações"></textarea>
+                </div>
+            </div>
+
+            <div class="form-row checkbox-row">
+                <label class="checkbox-field">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <span class="checkbox-custom"></span>
+                    Desejo receber informações da Multigrãos Logistica e Transportes
+                </label>
+            </div>
+
+            <button type="submit" class="cotacao-submit">SOLICITAR</button>
+            <p id="cotacao-feedback" class="cotacao-feedback" aria-live="polite"></p>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-column footer-contact">
+                <div class="footer-item">
+                    <div class="footer-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <h3>Endereço</h3>
+                        <p>Rua Presidente Getúlio Vargas, 1416 - Sala 202<br>Centro, Gurupi - TO<br>CEP: 77402-090</p>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <div class="footer-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>comercial@multigraoslogistica.com.br</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-column footer-social">
+                <h3>Redes Sociais</h3>
+                <div class="footer-social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <div class="footer-bible">
+                    <h3>Provérbios 9:10</h3>
+                    <p>Precisa que eu explique o significado desse versículo ou procure outras passagens semelhantes?</p>
+                </div>
+            </div>
+
+            <div class="footer-column footer-brand">
+                <img src="assets/log-multigraos.png" alt="Logo Multigrãos" class="footer-logo">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
