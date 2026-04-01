@@ -1484,6 +1484,7 @@ body {
         justify-content: center;
     }
 
+
     .hero-content {
         align-items: center;
         text-align: center;
@@ -1556,12 +1557,21 @@ body {
         padding: 120px 0 60px;
     }
 
+    .hero-bg{
+        background: url('assets/img-principal-mobile.jpg') center/cover no-repeat;
+    }
+
     .hero-content {
         padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
     }
 
     .headline {
         font-size: 26px;
+        text-align: left;
     }
 
     .headline strong {
@@ -1570,6 +1580,7 @@ body {
 
     .hero-description {
         font-size: 14px;
+        text-align: left;
     }
 
     .cta-button {
@@ -1580,14 +1591,29 @@ body {
     .about {
         padding: 60px 20px;
     }
+    .about-left {
+        justify-content: left;
+    }
 
     .about-title {
-        font-size: 2.2rem;
+        font-size: 3.7em;
+        text-align: left;
+    }
+
+    .about-text {
+        font-size: 0.8em;
+        line-height: 1.6;
     }
 
     .about-cards {
         grid-template-columns: 1fr;
         margin: 80px auto;
+    }
+
+    #gradient{
+        top: 50px;
+        width: 300px;
+        height: 300px;
     }
 
     /* WHERE */
@@ -1596,7 +1622,12 @@ body {
     }
 
     .where-title {
-        font-size: 2.2rem;
+        font-size: 3.5em;
+    }
+
+    .where-text {
+        font-size: 0.8em;
+        line-height: 1.6;
     }
 
     #gradient-2 {
@@ -1609,15 +1640,24 @@ body {
 
 
     /* SECURITY */
+
     .security-title {
-        font-size: 2.2rem;
+        font-size: 2.5em;
         text-align: center;
     }
 
     .security-card-1,
     .security-card-2 {
-        width: 100%;
-        padding: 30px;
+        width: 90%;
+        height: 90%;
+        padding: 20px 30px;
+        margin: 0 auto;
+    }
+
+    .security-card-text-1, 
+    .security-card-text-2 {
+        margin-top: -10px;
+        font-size: 0.6em;
     }
 
     /* TRANSPORTES */
@@ -1650,12 +1690,12 @@ body {
     }
 
     .transportes .carousel img.active {
-        transform: scale(1.05);
+        transform: scale(0.8);
         box-shadow: 0 10px 20px rgba(0, 200, 83, 0.24);
     }
 
     .transportes .carousel img.side {
-        transform: scale(0.6);
+        transform: scale(0.4);
     }
 
     .transportes .content {
@@ -1665,20 +1705,65 @@ body {
 
     .transportes .content h1 {
         font-size: 1.8rem;
+        text-align: left;
     }
 
     .transportes .content h3 {
         font-size: 1.2rem;
+        text-align: left;
     }
 
     .transportes .content p {
-        font-size: 0.85rem;
+        font-size: 0.6rem;
         line-height: 1.6;
+        text-align: left;
     }
 
     /* CONTATO */
+
+    .fale-conosco {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 60px 20px; /* IGUAL DOS DOIS LADOS */
+        box-sizing: border-box;
+    }
+    
+    .fale-conosco-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        
+    }
+
+    .fale-conosco-inner {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .fale-conosco-details .detail-item {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+        width: 100%;
+    }
+
     .fale-conosco-copy h2 {
         font-size: 2rem;
+    }
+
+    .fale-conosco-description {
+        font-size: 0.8rem;
+        line-height: 1.6;
+    }
+
+    .fale-conosco-form {
+        width: 100%;
+        padding: 28px;
     }
 
     /* CLIENTES */
@@ -1698,6 +1783,40 @@ body {
     .footer-brand {
         text-align: center;
         align-items: center;
+    }
+
+    .footer-item, .footer-icon {
+        font-size: 1.5em;
+    }
+
+    .footer-item h3 {
+        font-size: 1em;
+
+    }
+
+    .footer-item p {
+        font-size: 0.5em;
+
+    }
+
+    .footer-social-links h3 {
+        font-size: 1em;
+    }
+
+    .footer-social-links a {
+        font-size: 1.5em;
+    }
+
+    .footer-bible h3 {
+        font-size: 1.5em;
+    }
+
+    .footer-bible p {
+        font-size: 0.6em;
+    }
+
+    .footer-logo {
+        width: 180px;
     }
 }
 
